@@ -1,0 +1,127 @@
+body{
+    background-color:rgb(20, 20, 49);
+}
+
+body #container{
+    width: 90vw;
+    height: 70vh;
+    background-image: repeating-linear-gradient(90deg, #4CAF50, #00BCD4);
+    margin: auto;
+    margin-top: 15vh;
+    box-shadow: 0px 0px 50px black;
+    border-radius: 20px;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#heading span{
+    color: rgb(20, 20, 49);
+    font-size: 2.5em;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+#container #Counter-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#container #Counter-input #input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+}
+
+#input label{
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 1rem;
+    align-items: center;
+    color: rgb(20, 20, 49);
+}
+
+#input input{
+    height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    min-width: 100px;
+    margin:0rem 1rem;
+    box-shadow: 0px 0px 4px black;
+    border-color: black;
+    background-color: transparent;
+}
+
+#Counter-input button{
+    border-radius: 30px;
+    width: 110px;
+    height: 30px;
+    color: burlywood;
+    background-color: rgb(20, 20, 49);
+}
+
+#Counter-input button:hover{
+    background-color: teal;
+    color: rgb(20, 20, 49);
+    text-shadow: 0px 0px 1px black;
+}
+
+#counter-container, #counter-container *{
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+#counter{
+    width: 70%;
+    height: 20vh;
+    background-color: rgb(20, 20, 49);  
+    font-size: 20px;
+    color: burlywood;
+    text-align: center;
+}
+
+#counter #ctr1{
+    width: 70px;
+    height: 100px;
+    background-color: black;
+}
+
+#counter #ctr1 #ctr2{
+    display: none;
+    width: 70px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 545px){
+    
+    #container #Counter-input #input {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    body #container {
+        width: 90vw;
+        height: 80vh;
+        margin-top: 10vh;
+    }
+
+}
