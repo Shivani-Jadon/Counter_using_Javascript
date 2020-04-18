@@ -66,14 +66,27 @@ body #container{
     border-radius: 30px;
     width: 110px;
     height: 30px;
+    margin-left: 1%;
+}
+#Counter-input #btn1{
     color: burlywood;
     background-color: rgb(20, 20, 49);
 }
-
-#Counter-input button:hover{
-    background-color: teal;
+#Counter-input #btn2{
     color: rgb(20, 20, 49);
-    text-shadow: 0px 0px 1px black;
+    background-color: burlywood;
+}
+
+#Counter-input #btn1:hover{
+    background-color: #9E9E9E;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#Counter-input #btn2:hover{
+    background-color: #9E9E9E;
+    color: #E91E63;
+    font-weight: bold;
 }
 
 #counter-container, #counter-container *{
@@ -87,12 +100,10 @@ body #container{
     width: 70%;
     height: 20vh;
     background-color: rgb(20, 20, 49);  
-    font-size: 20px;
-    color: burlywood;
-    text-align: center;
 }
 
 #counter #ctr1{
+    display: flex;
     width: 70px;
     height: 100px;
     background-color: black;
@@ -108,6 +119,12 @@ body #container{
     font-weight: bold;
 }
 
+#counter #invalid{
+    display: none;
+    font-size: 20px;
+    color: burlywood;
+    text-align: center;
+}
 
 @media screen and (max-width: 545px){
     
@@ -120,8 +137,6 @@ body #container{
 
     body #container {
         width: 90vw;
-        height: 80vh;
-        margin-top: 10vh;
     }
 
 }
